@@ -6,17 +6,17 @@ if (person != null) {
 }
 let numberHoles = 1
 numberHoles++
-let holes = prompt("Would you like to play 3 or 6 holes?");
+let holes = Number (prompt("Would you like to play 3 or 6 holes?"));
 let total = 0
 for (let i = 0; i < holes; i++) {
-  let putts = Number (prompt(`How many putts for holes ${numberHoles}? (par: 3) `))
+  let putts = Number (prompt(`How many putts for this Hole ${numberHoles}? (par: 3) `))
   total += putts;
 }
 console.log(`${total}`);
 
 let totalPar;
 
-if (holes === 3){
+if(holes === 3){
   totalPar = total - 9
 } else {
   totalPar = total - 18
