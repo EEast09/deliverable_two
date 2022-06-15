@@ -4,7 +4,7 @@ if (person != null) {
   prompt("Hello " + person + "! Would you like to play 3 or 6 holes?");
 
 }
-let numberHoles = 
+let numberHoles = 1
 numberHoles++
 let holes = prompt("Would you like to play 3 or 6 holes?");
 let total = 0
